@@ -23,6 +23,13 @@ export default function Sidebar({ events, onSelectEvent, selectedEventId, onAddE
                     + Add Event
                 </button>
             </div>
+            <input
+                type="text"
+                className="search-bar"
+                placeholder="Search events..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+            />
         </div>
     );
 }
