@@ -65,6 +65,14 @@ export default function AddEventModal({ onClose, onAddEvent }) {
                             placeholder="Enter location"
                         />
                     </div>
+                    <div className="form-group">
+                        <label>Additional Notes</label>
+                        <textarea
+                            value={notes}
+                            onChange={(e) => setNotes(e.target.value)}
+                            placeholder="Any additional information"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
