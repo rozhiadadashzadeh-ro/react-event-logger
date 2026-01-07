@@ -12,5 +12,18 @@ export default function Sidebar({ events, onSelectEvent, selectedEventId, onAddE
         onAddEvent(newEvent);
         setIsModalOpen(false);
     };
+    return (
+        <div className="sidebar">
+            <div className="sidebar-header">
+                <h2>Events</h2>
+                <button
+                    className="add-button"
+                    onClick={() => setIsModalOpen(true)}
+                >
+                    + Add Event
+                </button>
+            </div>
+        </div>
+    );
 }
 
