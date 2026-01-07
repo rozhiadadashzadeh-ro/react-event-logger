@@ -11,6 +11,10 @@ export default function EventDetails({ event }) {
         <div className="details">
             <h1>{event.title}</h1>
             <p className="datetime">{event.datetime}</p>
+            <div className="section">
+                <h3>Description</h3>
+                <p>{event.description}</p>
+            </div>
         </div>
     );
 }
