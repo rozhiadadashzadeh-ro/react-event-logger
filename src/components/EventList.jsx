@@ -6,5 +6,25 @@ export default function EventList({ events, onSelectEvent, selectedEventId }) {
             </div>
         );
     }
+    return (
+        <div className="event-list">
+            {events.map(event => {
+                let itemClass = "event-item";
+                if (selectedEventId === event.id) {
+                    itemClass = "event-item selected";
+                }
+                return (
+                    <div
+                        key={event.id}
+                        className={itemClass}
+                        onClick={() => onSelectEvent(event.id)}
+                    >
+                        <h3 className="event-title">{event.title}</h3>
+                        <p className="event-datetime">{event.datetime}</p>
+                    </div>
+                );
+            })}
+        </div>
+    );
 }
 
