@@ -30,6 +30,17 @@ export default function Sidebar({ events, onSelectEvent, selectedEventId, onAddE
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
             />
+            <EventList
+                events={filteredEvents}
+                onSelectEvent={onSelectEvent}
+                selectedEventId={selectedEventId}
+            />
+            {isModalOpen && (
+                <AddEventModal
+                    onClose={() => setIsModalOpen(false)}
+                    onAddEvent={handleAddEvent}
+                />
+            )}
         </div>
     );
 }
