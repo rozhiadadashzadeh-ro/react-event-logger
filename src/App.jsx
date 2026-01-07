@@ -29,3 +29,13 @@ const INITIAL_EVENTS = [
     notes: 'Doors open at 7:30 PM'
   }
 ];
+
+function getEventsFromStorage() {
+  const savedEvents = localStorage.getItem('events');
+  if (savedEvents) {
+    return JSON.parse(savedEvents);
+  } else {
+    localStorage.setItem('events', JSON.stringify(INITIAL_EVENTS));
+    return INITIAL_EVENTS;
+  }
+}
