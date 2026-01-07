@@ -6,4 +6,10 @@ export default function EventDetails({ event }) {
             </div>
         );
     }
+
+    return (
+        <div className="details">
+            
+        </div>
+    );
 }
