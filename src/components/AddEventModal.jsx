@@ -48,6 +48,14 @@ export default function AddEventModal({ onClose, onAddEvent }) {
                             onChange={(e) => setDatetime(e.target.value)}
                         />
                     </div>
+                    <div className="form-group">
+                        <label>Description</label>
+                        <textarea
+                            value={description}
+                            onChange={(e) => setDescription(e.target.value)}
+                            placeholder="Enter event description"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
