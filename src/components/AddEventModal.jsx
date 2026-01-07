@@ -40,6 +40,14 @@ export default function AddEventModal({ onClose, onAddEvent }) {
                             placeholder="Enter event title"
                         />
                     </div>
+                    <div className="form-group">
+                        <label>Date and Time </label>
+                        <input
+                            type="datetime-local"
+                            value={datetime}
+                            onChange={(e) => setDatetime(e.target.value)}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
