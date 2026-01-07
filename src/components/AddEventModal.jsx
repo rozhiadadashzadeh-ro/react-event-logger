@@ -31,7 +31,15 @@ export default function AddEventModal({ onClose, onAddEvent }) {
                     <button className="close-button" onClick={onClose}>X</button>
                 </div>
                 <div className="event-form">
-                    
+                    <div className="form-group">
+                        <label>Event Title </label>
+                        <input
+                            type="text"
+                            value={title}
+                            onChange={(e) => setTitle(e.target.value)}
+                            placeholder="Enter event title"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
