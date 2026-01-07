@@ -73,6 +73,10 @@ export default function AddEventModal({ onClose, onAddEvent }) {
                             placeholder="Any additional information"
                         />
                     </div>
+                    <div className="form-actions">
+                        <button className="cancel-button" onClick={onClose}>Cancel</button>
+                        <button className="submit-button" onClick={handleSubmit}>Add Event</button>
+                    </div>
                 </div>
             </div>
         </div>
