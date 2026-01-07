@@ -52,4 +52,19 @@ export default function App() {
     setEvents(updatedEvents);
     localStorage.setItem('events', JSON.stringify(updatedEvents));
   };
+  const selectedEvent = events.find(event => event.id === selectedEventId);
+
+  return (
+    <div className="app">
+      <Sidebar
+        events={events}
+        onSelectEvent={handleSelectEvent}
+        selectedEventId={selectedEventId}
+        onAddEvent={handleAddEvent}
+      />
+      <div className="main-content">
+        <EventDetails event={selectedEvent} />
+      </div>
+    </div>
+  );
 }
