@@ -56,6 +56,15 @@ export default function AddEventModal({ onClose, onAddEvent }) {
                             placeholder="Enter event description"
                         />
                     </div>
+                    <div className="form-group">
+                        <label>Location</label>
+                        <input
+                            type="text"
+                            value={location}
+                            onChange={(e) => setLocation(e.target.value)}
+                            placeholder="Enter location"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
