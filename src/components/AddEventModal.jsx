@@ -22,5 +22,16 @@ export default function AddEventModal({ onClose, onAddEvent }) {
         };
         onAddEvent(newEvent);
     }
+
+    return (
+        <div className="modal-overlay">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h2>Add New Event</h2>
+                    <button className="close-button" onClick={onClose}>X</button>
+                </div>
+            </div>
+        </div>
+    );
 }
 
