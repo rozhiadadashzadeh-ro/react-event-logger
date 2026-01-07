@@ -9,7 +9,8 @@ export default function EventDetails({ event }) {
 
     return (
         <div className="details">
-            
+            <h1>{event.title}</h1>
+            <p className="datetime">{event.datetime}</p>
         </div>
     );
 }
