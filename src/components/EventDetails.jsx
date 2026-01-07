@@ -15,6 +15,10 @@ export default function EventDetails({ event }) {
                 <h3>Description</h3>
                 <p>{event.description}</p>
             </div>
+            <div className="section">
+                <h3>Location</h3>
+                <p>{event.location}</p>
+            </div>
         </div>
     );
 }
