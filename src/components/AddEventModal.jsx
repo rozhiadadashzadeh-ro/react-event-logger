@@ -30,6 +30,9 @@ export default function AddEventModal({ onClose, onAddEvent }) {
                     <h2>Add New Event</h2>
                     <button className="close-button" onClick={onClose}>X</button>
                 </div>
+                <div className="event-form">
+                    
+                </div>
             </div>
         </div>
     );
