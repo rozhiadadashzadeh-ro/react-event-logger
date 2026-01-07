@@ -39,3 +39,8 @@ function getEventsFromStorage() {
     return INITIAL_EVENTS;
   }
 }
+
+export default function App() {
+  const [events, setEvents] = useState(getEventsFromStorage());
+  const [selectedEventId, setSelectedEventId] = useState(null);
+}
